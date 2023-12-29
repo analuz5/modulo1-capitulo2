@@ -1,0 +1,117 @@
+body {
+    background-color: #F5F5F5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    background-color: #E9E9E9;
+    margin: auto;
+    width: 600px;
+    box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2);
+    /*Parâmetros: deslocamento em X; deslocamento em Y; borramento; raio com a cor do rgba */
+    border-radius: 5px;
+    overflow: hidden;
+    /* tanto a parte superior quanto inferior*/
+}
+
+.header {
+    padding: 2.5rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header-title {
+    color: #006666;
+    font-size: 2rem;/* 1rem equivale a 16px (depende, mas no geral sim - ir em inspecionar no F12 e verificar)*/
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+}
+
+.header-subtitle {
+    color: #168584;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.9rem;
+}
+
+button {
+    display: flex;
+}
+
+.col-1 {
+    background-color: #006B6B;
+    width: 50%;
+    padding: 1.2rem;
+    color: #FFF;
+}
+
+.col-2 {
+    background-color: #008888;
+    width: 50%;
+    padding: 0.6rem 1.2rem;
+    color: #FFF;
+}
+
+.subscription-title {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.price {
+    font-size: 1.62rem;
+    font-weight: 700;
+}
+
+.month {
+    font-size: 0.93rem;
+    font-style: italic;
+    margin-left: 0.9rem;
+}
+
+.button {
+    width: 100%;
+    padding: 0.9rem 2rem;
+    color: #008888;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+    background-color: #CCCCCC;
+    margin-top: 1.25rem;
+    cursor: pointer;
+    justify-content: center;/*alinha o conteúdo para o centro*/
+}
+
+.button:hover {
+    background-color: #E9E9E9;
+}
+
+.img {
+    text-align: center;
+}
+
+.img object {
+    width: 50px;
+    height: auto;
+}
+@media screen and (max-width:620px){
+    html{
+        font-size: 14px;
+    }
+    .flex-container{
+        flex-direction: column;
+       
+    }
+    .col-1, .col-2{
+        width: 100%;
+        box-sizing:border-box; /*por padrão ele era content-box e pegava o padding 
+        serve para ajustar o botão com a responsividade*/
+    }
+    .container{
+        width: 95%;
+    }
+}
