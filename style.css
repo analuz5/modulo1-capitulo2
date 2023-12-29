@@ -15,7 +15,7 @@ body {
 }
 
 .header {
-    padding: 2.5rem;
+    padding: 0.9rem;
 }
 
 .flex-container {
@@ -73,7 +73,7 @@ button {
     margin-left: 0.9rem;
 }
 
-.button {
+button {
     width: 100%;
     padding: 0.9rem 2rem;
     color: #008888;
@@ -86,7 +86,7 @@ button {
     justify-content: center;/*alinha o conteúdo para o centro*/
 }
 
-.button:hover {
+button:hover {
     background-color: #E9E9E9;
 }
 
@@ -97,6 +97,38 @@ button {
 .img object {
     width: 50px;
     height: auto;
+}
+
+.form-register{
+    background-color: #006B6B;
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    text-align: center;
+    flex-direction: column;
+}
+.form-register object{
+    width: 50px;
+    height: auto;
+}
+
+input{
+    width: 95%;
+    height: 22px;
+    padding: 0.9rem;/* margem interna */
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 0;
+    margin: 10px;
+}
+input:focus{
+    outline: none; /*sem linha preta interna*/
+    box-shadow: 0 0 10px #009E9E; /*sombra para destaque no input nomomento do foco*/
+}
+a{
+    color: #E9E9E9;
+    font-size: 0.8rem;
 }
 @media screen and (max-width:620px){
     html{
@@ -113,5 +145,8 @@ button {
     }
     .container{
         width: 95%;
+    }
+    .header{
+        padding: 15px;
     }
 }
