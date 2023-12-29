@@ -1,35 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Assinaturas</title>
     <style>
-        body{
+        body {
             background-color: #F5F5F5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        .container{
+
+        .container {
             background-color: #E9E9E9;
             margin: auto;
             width: 600px;
+            box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2);
+            /*Parâmetros: deslocamento em X; deslocamento em Y; borramento; raio com a cor do rgba */
+            border-radius: 5px;
+            overflow: hidden;
+            /* tanto a parte superior quanto inferior*/
         }
-        .header{
+
+        .header {
             padding: 20px;
         }
-        .flex-container{
+
+        .flex-container {
             display: flex;
-            flex-direction:row;
+            flex-direction: row;
             background-color: #006B6B;
             justify-content: space-around;
             padding: 20px;
         }
+
+        .header-title {
+            color: #006666;
+            font-size: 32px;
+            font-weight: 700;
+            padding: 20px;
+        }
+        .header-subtitle{
+            color:#168584;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 15px;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
-            Primeira Linha
+            <!-- Primeira Linha -->
+            <div class="header-title">
+                Entre para a nossa comunidade!
+            </div>
+            <div class="header-subtitle">
+                Faça a sua assinatura agora e ganhe 30% de desconto!
+            </div>
+            <div>
+                Faça parte da nossa comunidade de desenvolvedores.
+                Tenha suporte da nossa equipe e cresça mais rápido na sua carreira.
+            </div>
         </div>
+
         <div class="flex-container">
             <div>
                 Coluna 1
@@ -40,4 +75,5 @@
         </div>
     </div>
 </body>
+
 </html>
