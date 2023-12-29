@@ -23,7 +23,7 @@
         }
 
         .header {
-            padding: 20px;
+            padding: 2.5rem;
         }
 
         .flex-container {
@@ -34,16 +34,16 @@
 
         .header-title {
             color: #006666;
-            font-size: 32px;
+            font-size: 2rem;/* 1rem equivale a 16px (depende, mas no geral sim - ir em inspecionar no F12 e verificar)*/
             font-weight: 700;
-            padding: 20px;
+            margin-bottom: 1.25rem;
         }
 
         .header-subtitle {
             color: #168584;
-            font-size: 20px;
+            font-size: 1.2rem;
             font-weight: 500;
-            padding: 15px;
+            margin-bottom: 0.9rem;
         }
 
         button {
@@ -53,44 +53,45 @@
         .col-1 {
             background-color: #006B6B;
             width: 50%;
-            padding: 20px;
+            padding: 1.2rem;
             color: #FFF;
         }
 
         .col-2 {
             background-color: #008888;
             width: 50%;
-            padding: 10px 20px;
+            padding: 0.6rem 1.2rem;
             color: #FFF;
         }
 
         .subscription-title {
-            font-size: 20px;
+            font-size: 1.25rem;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 1.25rem;
         }
 
         .price {
-            font-size: 26px;
+            font-size: 1.62rem;
             font-weight: 700;
         }
 
         .month {
-            font-size: 15px;
+            font-size: 0.93rem;
             font-style: italic;
-            margin-left: 15px;
+            margin-left: 0.9rem;
         }
 
         .button {
             width: 100%;
-            padding: 15px 32px;
+            padding: 0.9rem 2rem;
             color: #008888;
-            font-size: 16px;
+            font-size: 1rem;
             border-radius: 4px;
             border: none;
             background-color: #CCCCCC;
-            margin-top: 20px;
+            margin-top: 1.25rem;
             cursor: pointer;
+            justify-content: center;/*alinha o conteúdo para o centro*/
         }
 
         .button:hover {
@@ -104,6 +105,24 @@
         .img object {
             width: 50px;
             height: auto;
+        }
+        @media screen and (max-width:620px){
+            html{
+                font-size: 14px;
+            }
+            .flex-container{
+                flex-direction: column;
+               
+            }
+            .col-1, .col-2{
+                width: 100%;
+                box-sizing:border-box; /*por padrão ele era content-box e pegava o padding 
+                serve para ajustar o botão com a responsividade*/
+            }
+            .container{
+                width: 95%;
+            }
+            
         }
     </style>
 </head>
